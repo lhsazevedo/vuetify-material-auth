@@ -1,4 +1,7 @@
-# vuetify-google-sign-in-2018
+# Vuetify Google Sign in 2018
+
+## Demo
+Demo: https://lhsazevedo.github.io/vuetify-google-signin-2018
 
 ## Project setup
 ```
