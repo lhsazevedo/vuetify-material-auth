@@ -23,6 +23,7 @@ const routes = [
             component: SigninIdentifier
           }, {
             path: 'password',
+            name: 'password',
             component: SigninPassword
           }
         ]

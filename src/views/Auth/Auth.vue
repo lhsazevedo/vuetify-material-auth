@@ -6,7 +6,7 @@
     <div>
       <v-card
         class="pa-10"
-        style="width: 450px; min-height: 500px"
+        style="width: 450px; min-height: 500px; overflow: hidden;"
         outlined
       >
         <router-view />

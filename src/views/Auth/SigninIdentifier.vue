@@ -23,7 +23,7 @@
     </div>
     <div class="d-flex justify-space-between">
       <v-btn class="text-none letter-spacing-0" style="margin-left: -16px;" color="primary" text>Create account</v-btn>
-      <v-btn class="text-none letter-spacing-0" style="min-width: 88px;" color="primary" depressed>Next</v-btn>
+      <v-btn @click="$router.push({ name: 'password' })" class="text-none letter-spacing-0" style="min-width: 88px;" color="primary" depressed>Next</v-btn>
     </div>
   </div>
 </template>
