@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="#">
+  <a href="https://lhsazevedo.github.io/vuetify-google-signin-2018">
     <img src=".github/assets/logo.svg" alt="Logo" height="300px" />
   </a>
 </div>
