@@ -4,7 +4,7 @@
   </a>
 </div>
 
-<h1 align="center">Vuetfiy Google Sign In (2018)</h1>
+<h1 align="center">Vuetify Google Sign In (2018)</h1>
 <p align="center">A work-in-progress Google like login example using vuetify</p>
 
 <p align="center">
