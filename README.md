@@ -1,4 +1,15 @@
-# Vuetify Google Sign in 2018
+<div align="center">
+  <a href="#">
+    <img src=".github/assets/logo.svg" alt="Logo" height="300px" />
+  </a>
+</div>
+
+<h1 align="center">Vuetfiy Google Sign In (2018)</h1>
+<p align="center">A work-in-progress Google like login example using vuetify</p>
+
+<p align="center">
+    <img src="https://travis-ci.com/lhsazevedo/vuetify-admin-console.svg?branch=master" alt="Build status" />
+</p>
 
 ## Demo
 Demo: https://lhsazevedo.github.io/vuetify-google-signin-2018
