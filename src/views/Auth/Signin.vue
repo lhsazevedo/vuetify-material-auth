@@ -1,11 +1,14 @@
 <template>
   <div>
     <div class="text-center mb-4">
-      <span class="title text--secondary">Vuetify</span>
+      <span class="text-h6 text--secondary">
+        <img src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png" alt="" width="24" style="vertical-align: middle;">
+        Vuetify
+      </span>
     </div>
     <div class="transition-wrapper">
       <transition :name="transitionName">
-        <router-view />
+        <router-view @next="$emit('next', $event)" />
       </transition>
     </div>
   </div>

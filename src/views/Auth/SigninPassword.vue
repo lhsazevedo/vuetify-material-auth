@@ -1,11 +1,12 @@
 <template>
   <div>
     <div class="text-center w-100">
-      <h1 class="headline mb-2">Welcome</h1>
+      <h1 class="text-h5 mb-2">Welcome</h1>
       <v-chip
         class="mb-10"
-        @click="nop"
+        @click="$router.push({ name: 'signin' })"
         outlined
+        link
       >
         <v-avatar left>
           <v-icon color="secondary">mdi-account-circle</v-icon>
@@ -19,11 +20,13 @@
       <v-form>
         <v-text-field
           class="mb-10"
+          :append-icon="show ? 'mdi-eye-off-outline' : 'mdi-eye-outline'"
           label="Enter your password"
           name="password"
-          type="text"
+          :type="show ? 'input' : 'password'"
           hide-details="auto"
           outlined
+          @click:append="show = !show"
         ></v-text-field>
       </v-form>
 
@@ -37,6 +40,21 @@
 
 <script>
 export default {
+  data: () => ({
+    show: false
+  }),
+
+  computed: {
+    password: {
+      get () {
+        return this.$store.state.password
+      },
+      set (value) {
+        this.$store.commit('updatePassword', value)
+      }
+    }
+  },
+
   methods: {
     nop () {
 

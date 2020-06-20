@@ -1,11 +1,14 @@
 <template>
   <div>
     <v-card
-      class="pa-10"
       style="width: 450px; min-height: 500px; overflow: hidden;"
       outlined
+      :disabled="disabled"
     >
-      <slot />
+      <v-progress-linear v-if="loading" indeterminate />
+      <div class="pa-10">
+        <slot />
+      </div>
     </v-card>
 
     <login-footer/>
@@ -16,6 +19,17 @@
 import LoginFooter from './LoginFooter'
 
 export default {
+  props: {
+    loading: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    }
+  },
+
   components: {
     LoginFooter
   }
