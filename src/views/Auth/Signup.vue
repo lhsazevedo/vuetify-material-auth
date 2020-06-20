@@ -93,7 +93,7 @@
           </v-form>
           <div class="transition-wrapper">
             <div class="d-flex justify-space-between mt-8">
-              <v-btn @click="$router.push({ name: 'signin' })" class="text-none letter-spacing-0" style="margin-left: -16px;" color="primary" text>Sign in stead</v-btn>
+              <v-btn @click="$router.push({ name: 'signin' })" class="text-none letter-spacing-0" style="margin-left: -16px;" color="primary" text>Sign in instead</v-btn>
               <v-btn @click="next" class="text-none letter-spacing-0" style="min-width: 88px;" color="primary" depressed>Next</v-btn>
             </div>
             <!-- <transition :name="transitionName">
