@@ -1,0 +1,9 @@
+// @include theme(v-chip) using ($material) {
+//     opacity: map-deep-get($material, 'states', 'hover')
+// }
+
+@include theme(v-chip) using ($material) {
+    &:hover::before {
+        opacity: map-deep-get($material, 'states', 'hover')
+    }
+}
