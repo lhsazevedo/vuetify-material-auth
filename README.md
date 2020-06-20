@@ -16,3 +16,9 @@ This project is a simple demonstration of how to create a Google like, router ba
 
 ## See it in action
 Demo: https://lhsazevedo.github.io/vuetify-google-signin-2018
+
+## Project setup
+```
+npm install
+npm run serve
+```
