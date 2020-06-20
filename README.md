@@ -11,28 +11,8 @@
     <img src="https://travis-ci.com/lhsazevedo/vuetify-admin-console.svg?branch=master" alt="Build status" />
 </p>
 
-## Demo
+## Introduction
+This project is a simple demonstration of how to create a Google like, router based, multi step login form using [Vue](https://vuejs.org/) and [Vuetify](https://vuetifyjs.com/en/).
+
+## See it in action
 Demo: https://lhsazevedo.github.io/vuetify-google-signin-2018
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
