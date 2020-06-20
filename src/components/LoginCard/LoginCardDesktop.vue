@@ -1,7 +1,9 @@
 <template>
   <div>
     <v-card
-      style="width: 450px; min-height: 500px; overflow: hidden;"
+      class="auth-card"
+      :class="{ signup: $route.name === 'signup' }"
+      style=""
       outlined
       :disabled="disabled"
     >
@@ -35,3 +37,15 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .auth-card {
+    width: 450px;
+    min-height: 500px;
+    overflow: hidden;
+  }
+
+  .auth-card.signup {
+    width: 750px;
+  }
+</style>

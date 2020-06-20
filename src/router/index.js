@@ -5,6 +5,7 @@ import Auth from '@/views/Auth/Auth'
 import Signin from '@/views/Auth/Signin'
 import SigninIdentifier from '@/views/Auth/SigninIdentifier'
 import SigninPassword from '@/views/Auth/SigninPassword'
+import Signup from '@/views/Auth/Signup'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,10 @@ const routes = [
             component: SigninPassword
           }
         ]
+      }, {
+        path: 'signup',
+        component: Signup,
+        name: 'signup'
       }
     ]
   }, {

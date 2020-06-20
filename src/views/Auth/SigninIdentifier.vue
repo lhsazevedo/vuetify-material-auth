@@ -26,8 +26,8 @@
       <a href="" class="text-none text-decoration-none font-weight-bold">Learn more</a>
     </div>
     <div class="d-flex justify-space-between">
-      <v-btn class="text-none letter-spacing-0" style="margin-left: -16px;" color="primary" text>Create account</v-btn>
-      <v-btn @click="next" class="text-none letter-spacing-0" style="min-width: 88px;" color="primary" outlined depressed>Next</v-btn>
+      <v-btn @click="$router.push({ name: 'signup' })" class="text-none letter-spacing-0" style="margin-left: -16px;" color="primary" text>Create account</v-btn>
+      <v-btn @click="next" class="text-none letter-spacing-0" style="min-width: 88px;" color="primary" depressed>Next</v-btn>
     </div>
   </div>
 </template>
