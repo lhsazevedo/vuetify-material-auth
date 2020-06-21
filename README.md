@@ -16,6 +16,13 @@
 ## Introduction
 This project is a simple demonstration of how to create a Google like, router based, multi step login form using [Vue](https://vuejs.org/) and [Vuetify](https://vuetifyjs.com/en/).
 
+## Features and Roadmap
+- [x] Sign in flow
+- [ ] Sign up flow
+- [ ] Username recovery flow
+- [ ] Password recovery flow
+- [ ] Internationalization
+
 ## See it in action
 Demo: https://lhsazevedo.github.io/vuetify-material-auth/
 
