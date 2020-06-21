@@ -1,12 +1,15 @@
 <template>
   <div>
     <div class="text-center">
-      <h1 class="headline mb-2">Sign in</h1>
+      <h1 class="headline mb-2">
+        Sign in
+      </h1>
       <span class="d-inline-block mb-8">Use your Vuetify Account</span>
     </div>
 
     <v-form @submit.prevent="next">
       <v-text-field
+        ref="input"
         v-model="identifier"
         class="mb-2"
         label="Email or phone"
@@ -16,18 +19,40 @@
         outlined
         :disabled="disabled"
         :error-messages="error"
-        ref="input"
-      ></v-text-field>
-      <a href="#" class="d-inline-block text-body-2 text-decoration-none font-weight-bold mb-8" @click="wip">Forgot email?</a>
+      />
+      <a
+        href="#"
+        class="d-inline-block text-body-2 text-decoration-none font-weight-bold mb-8"
+        @click="wip"
+      >Forgot email?</a>
     </v-form>
 
     <div class="text-body-2 text--secondary mb-8">
       Not your computer? Use a Private Window to sign in.
-      <a href="#" class="d-inline-block text-none text-decoration-none font-weight-bold">Learn more</a>
+      <a
+        href="#"
+        class="d-inline-block text-none text-decoration-none font-weight-bold"
+      >Learn more</a>
     </div>
     <div class="d-flex justify-space-between">
-      <v-btn @click="$router.push({ name: 'signup' })" class="text-none letter-spacing-0" style="margin-left: -16px;" color="primary" text>Create account</v-btn>
-      <v-btn @click="next" class="text-none" style="min-width: 88px;" color="primary" depressed>Next</v-btn>
+      <v-btn
+        class="text-none letter-spacing-0"
+        style="margin-left: -16px;"
+        color="primary"
+        text
+        @click="$router.push({ name: 'signup' })"
+      >
+        Create account
+      </v-btn>
+      <v-btn
+        class="text-none"
+        style="min-width: 88px;"
+        color="primary"
+        depressed
+        @click="next"
+      >
+        Next
+      </v-btn>
     </div>
   </div>
 </template>

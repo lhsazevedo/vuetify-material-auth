@@ -1,19 +1,25 @@
 <template>
   <div>
     <div class="text-center w-100">
-      <h1 class="text-h5 mb-2">Welcome</h1>
+      <h1 class="text-h5 mb-2">
+        Welcome
+      </h1>
       <v-chip
         class="mb-10"
-        @click="$router.push({ name: 'signin' })"
         outlined
         link
+        @click="$router.push({ name: 'signin' })"
       >
         <v-avatar left>
-          <v-icon color="secondary">mdi-account-circle</v-icon>
+          <v-icon color="secondary">
+            mdi-account-circle
+          </v-icon>
         </v-avatar>
         email@example.com
         <v-avatar right>
-          <v-icon color="secondary">mdi-chevron-down</v-icon>
+          <v-icon color="secondary">
+            mdi-chevron-down
+          </v-icon>
         </v-avatar>
       </v-chip>
 
@@ -27,12 +33,28 @@
           hide-details="auto"
           outlined
           @click:append="show = !show"
-        ></v-text-field>
+        />
       </v-form>
 
       <div class="d-flex justify-space-between">
-        <v-btn class="text-none letter-spacing-0 font-weight-bold" style="margin-left: -16px;" color="primary" text @click="wip">Forgot password?</v-btn>
-        <v-btn @click="$router.push({ name: 'password' })" class="text-none" style="min-width: 88px;" color="primary" depressed>Next</v-btn>
+        <v-btn
+          class="text-none letter-spacing-0 font-weight-bold"
+          style="margin-left: -16px;"
+          color="primary"
+          text
+          @click="wip"
+        >
+          Forgot password?
+        </v-btn>
+        <v-btn
+          class="text-none"
+          style="min-width: 88px;"
+          color="primary"
+          depressed
+          @click="$router.push({ name: 'password' })"
+        >
+          Next
+        </v-btn>
       </div>
     </div>
   </div>

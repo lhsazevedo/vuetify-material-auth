@@ -4,7 +4,10 @@
     :class="{ 'align-start': $vuetify.breakpoint.xsOnly }"
     fluid
   >
-    <login-card :loading="loading" :disabled="disabled">
+    <login-card
+      :loading="loading"
+      :disabled="disabled"
+    >
       <router-view @next="onNext" />
     </login-card>
   </v-container>
@@ -14,12 +17,12 @@
 import LoginCard from '@/components/LoginCard/LoginCard'
 
 export default {
+
+  components: { LoginCard },
   data: () => ({
     loading: false,
     disabled: false
   }),
-
-  components: { LoginCard },
 
   methods: {
     onNext (data) {

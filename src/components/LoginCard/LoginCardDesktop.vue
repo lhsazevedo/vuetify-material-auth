@@ -7,13 +7,16 @@
       outlined
       :disabled="disabled"
     >
-      <v-progress-linear v-if="loading" indeterminate />
+      <v-progress-linear
+        v-if="loading"
+        indeterminate
+      />
       <div class="pa-10">
         <slot />
       </div>
     </v-card>
 
-    <login-footer/>
+    <login-footer />
   </div>
 </template>
 
@@ -21,6 +24,10 @@
 import LoginFooter from './LoginFooter'
 
 export default {
+
+  components: {
+    LoginFooter
+  },
   props: {
     loading: {
       type: Boolean,
@@ -30,10 +37,6 @@ export default {
       type: Boolean,
       default: false
     }
-  },
-
-  components: {
-    LoginFooter
   }
 }
 </script>

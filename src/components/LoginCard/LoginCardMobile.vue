@@ -3,7 +3,7 @@
     <div class="flex-grow-1">
       <slot />
     </div>
-    <login-footer/>
+    <login-footer />
   </div>
 </template>
 
