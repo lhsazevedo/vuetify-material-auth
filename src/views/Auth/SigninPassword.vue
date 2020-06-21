@@ -31,7 +31,7 @@
       </v-form>
 
       <div class="d-flex justify-space-between">
-        <v-btn class="text-none letter-spacing-0 font-weight-bold" style="margin-left: -16px;" color="primary" text>Forgot password?</v-btn>
+        <v-btn class="text-none letter-spacing-0 font-weight-bold" style="margin-left: -16px;" color="primary" text @click="wip">Forgot password?</v-btn>
         <v-btn @click="$router.push({ name: 'password' })" class="text-none" style="min-width: 88px;" color="primary" depressed>Next</v-btn>
       </div>
     </div>
@@ -39,6 +39,8 @@
 </template>
 
 <script>
+import { wip } from '@/helpers.js'
+
 export default {
   data: () => ({
     show: false
@@ -56,9 +58,7 @@ export default {
   },
 
   methods: {
-    nop () {
-
-    }
+    wip
   }
 }
 </script>

@@ -18,12 +18,12 @@
         :error-messages="error"
         ref="input"
       ></v-text-field>
-      <a href="" class="d-inline-block text-body-2 text-decoration-none font-weight-bold mb-8">Forgot email?</a>
+      <a href="#" class="d-inline-block text-body-2 text-decoration-none font-weight-bold mb-8" @click="wip">Forgot email?</a>
     </v-form>
 
     <div class="text-body-2 text--secondary mb-8">
       Not your computer? Use a Private Window to sign in.
-      <a href="" class="d-inline-block text-none text-decoration-none font-weight-bold">Learn more</a>
+      <a href="#" class="d-inline-block text-none text-decoration-none font-weight-bold">Learn more</a>
     </div>
     <div class="d-flex justify-space-between">
       <v-btn @click="$router.push({ name: 'signup' })" class="text-none letter-spacing-0" style="margin-left: -16px;" color="primary" text>Create account</v-btn>
@@ -33,6 +33,8 @@
 </template>
 
 <script>
+import { wip } from '@/helpers.js'
+
 export default {
   data: () => ({
     error: null,
@@ -66,7 +68,9 @@ export default {
     validEmail (email) {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       return re.test(email)
-    }
+    },
+
+    wip
   }
 }
 </script>
