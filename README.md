@@ -4,8 +4,8 @@
   </a>
 </div>
 
-<h1 align="center">Vuetify Google Sign In (2018)</h1>
-<p align="center">A work-in-progress Google like login example using vuetify</p>
+<h1 align="center">Vuetify Material Auth</h1>
+<p align="center">A work-in-progress Google like auth example using vuetify</p>
 
 <p align="center">
     <img src="https://travis-ci.com/lhsazevedo/vuetify-admin-console.svg?branch=master" alt="Build status" />
