@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://lhsazevedo.github.io/vuetify-google-signin-2018">
+  <a href="https://lhsazevedo.github.io/vuetify-material-auth/">
     <img src=".github/assets/logo.svg" alt="Logo" height="300px" />
   </a>
 </div>
@@ -8,7 +8,7 @@
 <p align="center">A work-in-progress Google like auth example using vuetify</p>
 
 <p align="center">
-    <img src="https://travis-ci.com/lhsazevedo/vuetify-admin-console.svg?branch=master" alt="Build status" />
+    <img src="https://travis-ci.com/lhsazevedo/vuetify-material-auth.svg?branch=master" alt="Build status" />
 </p>
 
 ## Introduction
