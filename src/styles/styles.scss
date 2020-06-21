@@ -15,3 +15,15 @@
 .h-auto {
   height: auto !important;
 }
+
+.v-btn {
+  font-family: $heading-font-family;
+}
+
+.v-application .font-family-heading {
+  font-family: $heading-font-family !important;
+}
+
+.v-application .font-family-body {
+  font-family: $body-font-family !important;
+}

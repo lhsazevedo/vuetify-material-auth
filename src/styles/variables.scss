@@ -1,9 +1,45 @@
+$heading-font-family: 'Manrope', sans-serif;
+
 $headings: (
+  'h1': (
+    'weight': 400,
+  ),
+  'h2': (
+    'weight': 400,
+  ),
+  'h3': (
+    'weight': 500,
+  ),
+  'h4': (
+    'weight': 500,
+  ),
+  'h5': (
+    'weight': 500,
+  ),
+  'h6': (
+    'weight': 500,
+  ),
+  'subtitle-1': (
+    'weight': normal,
+  ),
+  'subtitle-2': (
+    'weight': 500,
+  ),
   'body-1': (
+    'weight': 400,
     'letter-spacing': normal
   ),
   'body-2': (
     'letter-spacing': normal
+  ),
+  'button': (
+    'weight': 700,
+  ),
+  'caption': (
+    'weight': 400,
+  ),
+  'overline': (
+    'weight': 500,
   )
 );
 
@@ -16,4 +52,7 @@ $material-light: (
     // 'outlined-disabled': rgba(map-get($shades, 'black'), 0.26),
     // 'outlined-hover': rgba(map-get($shades, 'black'), 0.86)
   ),
-)
+);
+
+$btn-letter-spacing: 0.025em;
+$btn-font-weight: 700;
