@@ -8,7 +8,9 @@
 <p align="center">A work-in-progress Google like auth example using vuetify</p>
 
 <p align="center">
+  <a href="https://travis-ci.com/lhsazevedo/vuetify-material-auth">
     <img src="https://travis-ci.com/lhsazevedo/vuetify-material-auth.svg?branch=master" alt="Build status" />
+  </a>
 </p>
 
 ## Introduction
