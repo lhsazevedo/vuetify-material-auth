@@ -4,12 +4,16 @@ node_js:
 
 cache: npm
 
-script: npm run build
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist
-  on:
-    branch: master
+jobs:
+  include:
+    - stage: lint
+      script: "npm run lint"
+    - stage: deploy
+      script: "npm run build"
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        local_dir: dist
+        on:
+          branch: master
