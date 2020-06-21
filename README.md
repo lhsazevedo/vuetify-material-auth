@@ -15,7 +15,7 @@
 This project is a simple demonstration of how to create a Google like, router based, multi step login form using [Vue](https://vuejs.org/) and [Vuetify](https://vuetifyjs.com/en/).
 
 ## See it in action
-Demo: https://lhsazevedo.github.io/vuetify-google-signin-2018
+Demo: https://lhsazevedo.github.io/vuetify-material-auth/
 
 ## Project setup
 ```
