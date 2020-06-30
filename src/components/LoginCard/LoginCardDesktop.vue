@@ -10,6 +10,7 @@
       <v-progress-linear
         v-if="loading"
         indeterminate
+        absolute
       />
       <div class="pa-10">
         <slot />
