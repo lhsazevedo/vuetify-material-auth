@@ -7,7 +7,7 @@
       text
       small
     >
-      English (United States)
+      {{ $vuetify.lang.t('$vuetify.login.footer.language') }}
     </v-btn>
     <div style="margin-right: -12px;">
       <v-btn
@@ -16,7 +16,7 @@
         text
         small
       >
-        Help
+        {{ $vuetify.lang.t('$vuetify.login.footer.help') }}
       </v-btn>
       <v-btn
         class="text-none letter-spacing-0"
@@ -24,7 +24,7 @@
         text
         small
       >
-        Privacy
+        {{ $vuetify.lang.t('$vuetify.login.footer.privacy') }}
       </v-btn>
       <v-btn
         class="text-none letter-spacing-0"
@@ -32,7 +32,7 @@
         text
         small
       >
-        Terms
+        {{ $vuetify.lang.t('$vuetify.login.footer.terms') }}
       </v-btn>
     </div>
   </div>
