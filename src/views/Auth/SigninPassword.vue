@@ -44,7 +44,7 @@
           text
           @click="wip"
         >
-          {{ $vuetify.lang.t('$vuetify.auth.sign-in-password.forgot-password') }}Forgot password?
+          {{ $vuetify.lang.t('$vuetify.auth.sign-in-password.forgot-password') }}
         </v-btn>
         <v-btn
           class="text-none"
