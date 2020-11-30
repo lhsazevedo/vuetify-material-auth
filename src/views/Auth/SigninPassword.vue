@@ -2,7 +2,7 @@
   <div>
     <div class="text-center w-100">
       <h1 class="text-h5 mb-2">
-        Welcome
+        {{ $vuetify.lang.t('$vuetify.auth.sign-in-password.title') }}
       </h1>
       <v-chip
         class="mb-10"
@@ -27,7 +27,7 @@
         <v-text-field
           class="mb-10"
           :append-icon="show ? 'mdi-eye-off-outline' : 'mdi-eye-outline'"
-          label="Enter your password"
+          :label="$vuetify.lang.t('$vuetify.auth.sign-in-password.enter-password')"
           name="password"
           :type="show ? 'input' : 'password'"
           hide-details="auto"
@@ -44,7 +44,7 @@
           text
           @click="wip"
         >
-          Forgot password?
+          {{ $vuetify.lang.t('$vuetify.auth.sign-in-password.forgot-password') }}Forgot password?
         </v-btn>
         <v-btn
           class="text-none"
@@ -53,7 +53,7 @@
           depressed
           @click="$router.push({ name: 'password' })"
         >
-          Next
+          {{ $vuetify.lang.t('$vuetify.auth.sign-in-password.next') }}
         </v-btn>
       </div>
     </div>

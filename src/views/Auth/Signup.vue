@@ -16,11 +16,11 @@
                 width="24"
                 style="vertical-align: middle;"
               >
-              Vuetify
+              {{ $vuetify.lang.t('$vuetify.auth.sign-up.title') }}
             </span>
           </div>
           <h1 class="text-h5 mb-6">
-            Create your Vuetify Account
+            {{ $vuetify.lang.t('$vuetify.auth.sign-up.create') }}
           </h1>
           <v-form>
             <v-container class="pa-0">
@@ -32,7 +32,7 @@
                   <v-text-field
                     ref="input"
                     class="mb-2"
-                    label="First name"
+                    :label="$vuetify.lang.t('$vuetify.auth.sign-up.firstname')"
                     name="login"
                     type="text"
                     hide-details="auto"
@@ -48,7 +48,7 @@
                   <v-text-field
                     ref="input"
                     class="mb-2"
-                    label="Last name"
+                    :label="$vuetify.lang.t('$vuetify.auth.sign-up.lastname')"
                     name="login"
                     type="text"
                     hide-details="auto"
@@ -61,11 +61,11 @@
               <v-text-field
                 ref="input"
                 class="mb-2"
-                label="Your email address"
+                :label="$vuetify.lang.t('$vuetify.auth.sign-up.email')"
                 name="login"
                 type="text"
                 hide-details="auto"
-                hint="You'll need to confirm that this email belongs to you."
+                :hint="$vuetify.lang.t('$vuetify.auth.sign-up.email-hint')"
                 persistent-hint
                 outlined
                 :error-messages="error"
@@ -79,7 +79,7 @@
                   <v-text-field
                     ref="input"
                     class="mb-2"
-                    label="Password"
+                    :label="$vuetify.lang.t('$vuetify.auth.sign-up.password')"
                     name="login"
                     type="text"
                     hide-details="auto"
@@ -106,7 +106,7 @@
                 </v-col>
               </v-row>
               <div class="body-2">
-                Use 8 or more characters with a mix of letters, numbers & symbols
+                {{ $vuetify.lang.t('$vuetify.auth.sign-up.password-props') }}
               </div>
             </v-container>
           </v-form>
@@ -119,7 +119,7 @@
                 text
                 @click="$router.push({ name: 'signin' })"
               >
-                Sign in instead
+                {{ $vuetify.lang.t('$vuetify.auth.sign-up.instead') }}
               </v-btn>
               <v-btn
                 class="text-none letter-spacing-0"
@@ -128,7 +128,7 @@
                 depressed
                 @click="wip"
               >
-                Next
+                {{ $vuetify.lang.t('$vuetify.auth.sign-up.next') }}
               </v-btn>
             </div>
             <!-- <transition :name="transitionName">

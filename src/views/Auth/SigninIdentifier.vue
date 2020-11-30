@@ -2,9 +2,9 @@
   <div>
     <div class="text-center">
       <h1 class="headline mb-2">
-        Sign in
+        {{ $vuetify.lang.t('$vuetify.auth.sign-in.title') }}
       </h1>
-      <span class="d-inline-block mb-8">Use your Vuetify Account</span>
+      <span class="d-inline-block mb-8">{{ $vuetify.lang.t('$vuetify.auth.sign-in.subtitle') }}</span>
     </div>
 
     <v-form @submit.prevent="next">
@@ -12,7 +12,7 @@
         ref="input"
         v-model="identifier"
         class="mb-2"
-        label="Email or phone"
+        :label="$vuetify.lang.t('$vuetify.auth.sign-in.label')"
         name="login"
         type="text"
         hide-details="auto"
@@ -24,15 +24,15 @@
         href="#"
         class="d-inline-block text-body-2 text-decoration-none font-weight-bold mb-8"
         @click="wip"
-      >Forgot email?</a>
+      >{{ $vuetify.lang.t('$vuetify.auth.sign-in.forgot-email') }}</a>
     </v-form>
 
     <div class="text-body-2 text--secondary mb-8">
-      Not your computer? Use a Private Window to sign in.
+      {{ $vuetify.lang.t('$vuetify.auth.sign-in.private') }}
       <a
         href="#"
         class="d-inline-block text-none text-decoration-none font-weight-bold"
-      >Learn more</a>
+      >{{ $vuetify.lang.t('$vuetify.auth.sign-in.learn-more') }}</a>
     </div>
     <div class="d-flex justify-space-between">
       <v-btn
@@ -42,7 +42,7 @@
         text
         @click="$router.push({ name: 'signup' })"
       >
-        Create account
+        {{ $vuetify.lang.t('$vuetify.auth.sign-in.create-account') }}
       </v-btn>
       <v-btn
         class="text-none"
@@ -51,7 +51,7 @@
         depressed
         @click="next"
       >
-        Next
+        {{ $vuetify.lang.t('$vuetify.auth.sign-in.next') }}
       </v-btn>
     </div>
   </div>
