@@ -1,7 +1,5 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/vuetify-material-auth/'
-    : '/',
+  publicPath: process.env.PUBLIC_PATH || '/',
 
   'transpileDependencies': [
     'vuetify'
