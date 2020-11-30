@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://lhsazevedo.github.io/vuetify-material-auth/">
+  <a href="https://vuetify-material-auth.vercel.app">
     <img src=".github/assets/logo.svg" alt="Logo" height="300px" />
   </a>
 </div>
@@ -24,7 +24,7 @@ This project is a simple demonstration of how to create a Google like, router ba
 - [ ] Internationalization
 
 ## See it in action
-Demo: https://lhsazevedo.github.io/vuetify-material-auth/
+Demo: https://vuetify-material-auth.vercel.app
 
 ## Project setup
 ```
